@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    border: solid 2px #26c2ae;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    background-color: #c5e4e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo {
+    margin-bottom: 88px;
+}
+
+.main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 920px;
+    gap: 48px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.select-options-div {
+    margin: 45px 0 48px 48px;
+}
+
+.select-options-div p {
+    font-size: 16px;
+    color: #5e7a7d;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.bill-input {
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00474b;
+    width: 100%;
+    padding: 6px 17px 6px 19.3px;
+    background-color: #f3f9fa;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: top 50% left 5%;
+}
+
+.bill-div {
+    margin-bottom: 40px;
+}
+
+.select-tip-div {
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.select-tip {
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    padding: 6px 14px 6px 13px;
+    font-size: 24px;
+    border: none;
+    background-color: #00474b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.select-tip:hover {
+    background-color: #26c2ae;
+    color: #00474b;
+}
+
+.tip-input {
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    padding: 6px 14px 6px 13px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #547878;
+    background-color: 
+    #f3f9fa;
+}
+
+.people-input {
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00474b;
+    width: 100%;
+    padding: 6px 17px;
+    background-color: #f3f9fa;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: top 50% left 5%;
+}
+
+.result-div {
+    margin: 32px 32px 32px 0;
+    padding: 40px;
+    background-color: #00474b;
+    border-radius: 15px;
+}
+
+.tip-amount-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.amount-txt {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.amount-txt span {
+    color: #7f9d9f;
+    font-size: 13px;
+}
+
+.tip-amount-price {
+    text-align: right;
+    color: #26c2ae;
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+
+.total-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 122px;
+}
+
+.total-price {
+    text-align: right;
+    color: #26c2ae;
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.reset-button {
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    padding: 9px 40px 9px 37px;
+    background-color: #0d686d;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00474b;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset-button:hover {
+    background-color: #9fe8df;
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        margin-bottom: 41px;
+    }
+
+    .main-div {
+        grid-template-columns: 1fr;
+        max-width: 768px;
+        gap: 0;
+        border-radius: 25px 25px 0 0;
+        padding-bottom: 47px;
+    }
+
+    .select-options-div {
+        margin: 32px 32px 0 32px;
+    }
+
+    .select-tip-div {
+        margin-bottom: 32px;
+    }
+    
+    .buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .result-div {
+        margin: 32px 24px;
+        padding: 37px 22px 24px 24px;
+    }
+    
+    .tip-amount-div {
+        margin-bottom: 20px;
+    }
+
+    .tip-amount-price {
+        font-size: 32px;
+        letter-spacing: -0.67px;
+    }
+
+    .total-div {
+        margin-bottom: 32px;
+    }
+
+    .total-price {
+        font-size: 32px;
+        letter-spacing: -0.67px;
+    }
+}
